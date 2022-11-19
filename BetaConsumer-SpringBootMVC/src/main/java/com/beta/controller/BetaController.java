@@ -3,6 +3,7 @@ package com.beta.controller;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -10,9 +11,11 @@ import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -25,8 +28,10 @@ public class BetaController {
 
 	@Autowired
 	private RestTemplate template;
+	@Autowired
+	private ObjectMapper mapper;
 
-	@GetMapping("/")
+	@GetMapping("/home")
 	public String showHomePage() {
 		return "home"; // return logical view name to viewreslover
 	}// end of method
@@ -80,11 +85,111 @@ public class BetaController {
 
 		String result = response.getBody();
 		attrs.addFlashAttribute("result", result);
-		
-		
 
 		return "redirect:showAllEmployee";
-
 	}// end of method
+
+	@GetMapping("/edit")
+	public String showEditFormPage(@RequestParam("id") Integer empId, @ModelAttribute("empData") EmployeeBean employee)
+			throws Exception {
+
+		// invoke rest method
+		String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi/showById/{id}";
+
+		ResponseEntity<String> response = template.exchange(serviceurl, HttpMethod.GET, null, String.class, empId);
+
+		// get json body from response
+		String jsonBody = response.getBody();
+		// convert jsonbody to EmplooyeBean object
+		EmployeeBean Tempemployee = mapper.readValue(jsonBody, EmployeeBean.class);
+		BeanUtils.copyProperties(Tempemployee, employee);
+		return "edit_employee";
+	}// end of method
+
+	@PostMapping("/edit")
+	public String editTourist(RedirectAttributes attrs, @ModelAttribute("empData") EmployeeBean employee)
+			throws Exception {
+		System.out.println("BetaController.editTourist()");
+		// Convert object to jackson data using jackson api
+		String jsonData = mapper.writeValueAsString(employee);
+		// invoke rest service
+		String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/updateRecord";
+		// set Httpentity object
+		HttpHeaders headers = new HttpHeaders();
+		headers.setContentType(MediaType.APPLICATION_JSON);
+		HttpEntity<String> entity = new HttpEntity<String>(jsonData, headers);
+		ResponseEntity<String> resp = template.exchange(serviceUrl, HttpMethod.PUT, entity, String.class);
+
+		String result = resp.getBody();
+		attrs.addFlashAttribute("result", result);
+
+		return "redirect:showAllEmployee";
+	}// end of method
+	
+	@GetMapping("/delete")
+	public String showDeletFormPage(RedirectAttributes attrs,@RequestParam("id") Integer empId, @ModelAttribute("empData") EmployeeBean employee)
+			throws Exception {
+
+		// invoke rest method
+				String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi//delete/{id}";
+
+				ResponseEntity<String> response = template.exchange(serviceurl, HttpMethod.DELETE, null, String.class, empId);
+
+				// get json body from response
+				String result = response.getBody();
+		
+				attrs.addFlashAttribute("result", result);
+
+				return "redirect:showAllEmployee";
+	}// end of method
+	
+	@GetMapping("/search")
+	public String demo() throws Exception{
+		return "search_employee";
+	}//end of method
+
+	
+	
+	
+@GetMapping("/searchById")
+public String demo(@RequestParam("id") Integer empId,ModelMap modelMap) throws Exception{
+	System.out.println("BetaController.demo()");
+	
+	String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi/showById/{id}";
+	
+	ResponseEntity<String> response = template.exchange(serviceurl, HttpMethod.GET, null, String.class, empId);
+
+	// get json body from response
+	String jsonBody = response.getBody();
+	//System.out.println(jsonBody.toString());
+	// convert jsonbody to EmplooyeBean object
+	EmployeeBean Tempemployee = mapper.readValue(jsonBody, EmployeeBean.class);
+	modelMap.addAttribute("message", "Employee Found:: "+Tempemployee);
+	return "Notify";
+}//end of method
+	
+@GetMapping("/getDelete")
+public String getDeleteAll() throws Exception{
+	return "delete_employee";
+}//end of method
+
+@GetMapping("/deleteAll")
+public String DeletAll(ModelMap modelMap) throws Exception{
+	System.out.println("BetaController.DeletAll()");
+	
+	String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi/deleteAll";
+	
+	ResponseEntity<String> response = template.exchange(serviceurl, HttpMethod.DELETE, null, String.class );
+
+	// get json body from response
+	String jsonBody = response.getBody();
+	//System.out.println(jsonBody.toString());
+	// convert jsonbody to EmplooyeBean object
+	//EmployeeBean Tempemployee = mapper.readValue(jsonBody, EmployeeBean.class);
+	modelMap.addAttribute("message", jsonBody);
+	return "Notify";
+}//end of method
+
+
 
 }// end of class

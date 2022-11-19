@@ -12,6 +12,12 @@
 	<div id="d1">
 		<b>Welcome To Project Beta!!!</b>
 		<h1><a href="showAllEmployee">Display All Employees</a></h1>
+		<br>
+		<h1><a href="search">Search Employee</a></h1>
+		<br>
+		<h1><a href="getDelete">Delete By Employee ID</a></h1>
+		<br>
+		<h1><a href="deleteAll">Delete All</a></h1>
 	</div>
 
 </body>
