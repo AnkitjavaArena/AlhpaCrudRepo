@@ -18,6 +18,8 @@
 		<h1><a href="getDelete">Delete By Employee ID</a></h1>
 		<br>
 		<h1><a href="deleteAll">Delete All</a></h1>
+		<br>
+		<h1><a href="updateOrg">Update Orgainsation</a></h1>
 	</div>
 
 </body>

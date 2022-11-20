@@ -57,6 +57,8 @@
 	   <br> 
      <h2  style="text-align:center"><a href="add"> Add Employee </a>  </h2>
      
+     <h2  style="text-align:left"><a href="home">Back To Home </a>  </h2>
+     
      <bR><bR>
          <h1 style="color:red;text-align:center"> ${resultMsg}  </h1>
 

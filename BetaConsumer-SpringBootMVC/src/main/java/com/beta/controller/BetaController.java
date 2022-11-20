@@ -10,6 +10,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -190,6 +191,30 @@ public String DeletAll(ModelMap modelMap) throws Exception{
 	return "Notify";
 }//end of method
 
+
+@GetMapping("/updateOrg")
+public String updateOrg() throws Exception{
+	return "update_Employee_Organisation";
+}
+
+@GetMapping("/modifyOrganisation")
+public String modifyOrganisation(@RequestParam("id") Integer id ,
+		@RequestParam("organisation") String organisation,ModelMap modelMap) throws Exception{
+	System.out.println("BetaController.modifyOrganisation()");
+	//Integer id=Integer.parseInt(empId);
+//	http://lmipl-157.bbrouter:4000/crudApi/modify/18/Wipro
+	String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi/modify/{id}/{organisation}";
+	template.setRequestFactory(new HttpComponentsClientHttpRequestFactory());
+	ResponseEntity<String> response = template.exchange(serviceurl, HttpMethod.PATCH, null, String.class,id,organisation );
+
+	// get json body from response
+	String jsonBody = response.getBody();
+	//System.out.println(jsonBody.toString());
+	// convert jsonbody to EmplooyeBean object
+	//EmployeeBean Tempemployee = mapper.readValue(jsonBody, EmployeeBean.class);
+	modelMap.addAttribute("message", jsonBody);
+	return "Notify";
+}//end of method
 
 
 }// end of class
