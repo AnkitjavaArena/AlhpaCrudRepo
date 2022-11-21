@@ -25,11 +25,19 @@
 			</tr>
 			<tr>
 				<td>Employee Name::</td>
-				<td><frm:input path="employeeName" /></td>
+				<td><frm:input path="employeeName" />
+				<frm:errors  path="employeeName" cssStyle="color:red"/>
+				<span id="enameErr"></span>
+				</td>
 			</tr>
 			<tr>
 				<td>Employee's Organisation::</td>
-				<td><frm:input path="organisation" /></td>
+				<td><frm:input path="organisation" />
+				<frm:errors  path="organisation" cssStyle="color:red"/>
+				<span id="organisationErr"></span>
+				
+				
+				</td>
 			</tr>
 			<tr>
 				<td><input type="submit" value="Update"></td>
