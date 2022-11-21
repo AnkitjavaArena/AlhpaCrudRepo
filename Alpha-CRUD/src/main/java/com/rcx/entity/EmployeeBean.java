@@ -9,6 +9,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.SQLDelete;
+import org.hibernate.annotations.Where;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,6 +22,8 @@ import lombok.RequiredArgsConstructor;
 @Data
 @Entity
 @Table(name = "employee_tab")
+@SQLDelete(sql="UPDATE employee_tab SET status='inactive' where employeeid=?")
+@Where(clause="status<>'inactive'")
 @NoArgsConstructor
 @RequiredArgsConstructor
 @AllArgsConstructor
