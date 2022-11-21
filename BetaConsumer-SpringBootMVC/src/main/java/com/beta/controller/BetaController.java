@@ -40,7 +40,7 @@ public class BetaController {
 	@GetMapping("/showAllEmployee")
 	public String showAllEmployee(Map<String, Object> map) throws Exception {
 
-		String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/showAllEmployees";
+		String serviceUrl = "http://192.168.0.163:4000/crudApi/showAllEmployees";
 
 		ResponseEntity<String> resp = template.exchange(serviceUrl, HttpMethod.GET, null, String.class);
 
@@ -74,7 +74,9 @@ public class BetaController {
 		String jsonData = mapper.writeValueAsString(employee);
 		// invoke Spring rest service
 
-		String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/save";
+	//	String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/save";
+		String serviceUrl = "http://192.168.0.163:4000/crudApi/save";
+
 		// prepare HttpEntity object(headers + body)
 		// preparing headers n theen add json data in entity
 		HttpHeaders headers = new HttpHeaders();
@@ -95,9 +97,11 @@ public class BetaController {
 			throws Exception {
 
 		// invoke rest method
-		String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi/showById/{id}";
+	//	String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi/showById/{id}";
+		String serviceUrl = "http://192.168.0.163:4000/crudApi/showById/{id}";
 
-		ResponseEntity<String> response = template.exchange(serviceurl, HttpMethod.GET, null, String.class, empId);
+		
+		ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.GET, null, String.class, empId);
 
 		// get json body from response
 		String jsonBody = response.getBody();
@@ -114,7 +118,9 @@ public class BetaController {
 		// Convert object to jackson data using jackson api
 		String jsonData = mapper.writeValueAsString(employee);
 		// invoke rest service
-		String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/updateRecord";
+		//String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/updateRecord";
+		String serviceUrl = "http://192.168.0.163:4000/crudApi/updateRecord";
+		
 		// set Httpentity object
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
@@ -132,9 +138,10 @@ public class BetaController {
 			throws Exception {
 
 		// invoke rest method
-				String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi//delete/{id}";
-
-				ResponseEntity<String> response = template.exchange(serviceurl, HttpMethod.DELETE, null, String.class, empId);
+			//	String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi//delete/{id}";
+				String serviceUrl = "http://192.168.0.163:4000/crudApi/delete/{id}";
+				
+				ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.DELETE, null, String.class, empId);
 
 				// get json body from response
 				String result = response.getBody();
@@ -156,9 +163,12 @@ public class BetaController {
 public String demo(@RequestParam("id") Integer empId,ModelMap modelMap) throws Exception{
 	System.out.println("BetaController.demo()");
 	
-	String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi/showById/{id}";
+	//String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi/showById/{id}";
+	String serviceUrl = "http://192.168.0.163:4000/crudApi/showById/{id}";
 	
-	ResponseEntity<String> response = template.exchange(serviceurl, HttpMethod.GET, null, String.class, empId);
+	
+	
+	ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.GET, null, String.class, empId);
 
 	// get json body from response
 	String jsonBody = response.getBody();
@@ -178,9 +188,14 @@ public String getDeleteAll() throws Exception{
 public String DeletAll(ModelMap modelMap) throws Exception{
 	System.out.println("BetaController.DeletAll()");
 	
-	String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi/deleteAll";
+	//String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi/deleteAll";
+	String serviceUrl = "http://192.168.0.163:4000/crudApi/deleteAll";
 	
-	ResponseEntity<String> response = template.exchange(serviceurl, HttpMethod.DELETE, null, String.class );
+	
+	
+//	http://192.168.0.163:4000/CrudApi/actuator/info
+	
+	ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.DELETE, null, String.class );
 
 	// get json body from response
 	String jsonBody = response.getBody();
@@ -203,9 +218,12 @@ public String modifyOrganisation(@RequestParam("id") Integer id ,
 	System.out.println("BetaController.modifyOrganisation()");
 	//Integer id=Integer.parseInt(empId);
 //	http://lmipl-157.bbrouter:4000/crudApi/modify/18/Wipro
-	String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi/modify/{id}/{organisation}";
+	//String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi/modify/{id}/{organisation}";
+	String serviceUrl = "http://192.168.0.163:4000/crudApi/modify/{id}/{organisation";
+	
+	
 	template.setRequestFactory(new HttpComponentsClientHttpRequestFactory());
-	ResponseEntity<String> response = template.exchange(serviceurl, HttpMethod.PATCH, null, String.class,id,organisation );
+	ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.PATCH, null, String.class,id,organisation );
 
 	// get json body from response
 	String jsonBody = response.getBody();
