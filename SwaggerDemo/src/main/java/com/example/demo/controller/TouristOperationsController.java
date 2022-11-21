@@ -18,19 +18,18 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.demo.entity.Tourist;
 import com.example.demo.service.ITouristMgmtService;
 
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
+
 
 
 @RestController
 @RequestMapping("/tourist")
-@Api("All about tourists")
+//@Api("All about tourists")
 public class TouristOperationsController {
 	@Autowired
 	 private ITouristMgmtService  service;
 	
 	@PostMapping("/register")
-	@ApiOperation("For Tourist registration")
+//	@ApiOperation("For Tourist registration")
 	public ResponseEntity<String>  enrollTourist(@RequestBody Tourist tourist){
 		try {
 		//use service
