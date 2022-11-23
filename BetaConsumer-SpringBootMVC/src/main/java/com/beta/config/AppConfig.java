@@ -1,5 +1,6 @@
 package com.beta.config;
 
+import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
@@ -10,6 +11,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class AppConfig {
 
 	@Bean
+
 	public RestTemplate createTemplate() {
 		return new RestTemplate();
 	}// end of method
@@ -18,5 +20,8 @@ public class AppConfig {
 	public ObjectMapper createMapper() {
 		return new ObjectMapper();
 	}
+	
+	
+	
 
 }// end of class

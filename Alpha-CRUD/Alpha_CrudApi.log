@@ -482,3 +482,193 @@
 2022-11-22 04:32:02.817  INFO 25558 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : Employees found
 2022-11-22 04:32:02.818 DEBUG 25558 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : employees found, response=ok
 2022-11-22 04:32:02.818 DEBUG 25558 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 09:39:33.640 DEBUG 6586 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 09:39:33.642  INFO 6586 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 09:39:33.855  INFO 6586 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Employees found
+2022-11-23 09:39:33.856 DEBUG 6586 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 09:39:33.856 DEBUG 6586 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 09:41:16.023 DEBUG 6586 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 09:41:16.025  INFO 6586 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 09:41:16.034  INFO 6586 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : Employees found
+2022-11-23 09:41:16.035 DEBUG 6586 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 09:41:16.035 DEBUG 6586 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 09:47:35.108 DEBUG 6586 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 09:47:35.112  INFO 6586 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 09:47:35.124  INFO 6586 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : Employees found
+2022-11-23 09:47:35.124 DEBUG 6586 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 09:47:35.124 DEBUG 6586 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 09:48:32.997 DEBUG 6586 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 09:48:32.997  INFO 6586 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 09:48:33.001  INFO 6586 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Employees found
+2022-11-23 09:48:33.001 DEBUG 6586 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 09:48:33.001 DEBUG 6586 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 09:48:50.392 DEBUG 6586 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 09:48:50.393  INFO 6586 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 09:48:50.400  INFO 6586 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : Employees found
+2022-11-23 09:48:50.401 DEBUG 6586 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 09:48:50.401 DEBUG 6586 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 09:49:26.035 DEBUG 6586 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 09:49:26.036  INFO 6586 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 09:49:26.043  INFO 6586 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Employees found
+2022-11-23 09:49:26.044 DEBUG 6586 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 09:49:26.045 DEBUG 6586 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 09:49:28.023 DEBUG 6586 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 09:49:28.023  INFO 6586 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 09:49:28.028  INFO 6586 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Employees found
+2022-11-23 09:49:28.029 DEBUG 6586 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 09:49:28.031 DEBUG 6586 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 09:53:27.236 DEBUG 8496 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 09:53:27.238  INFO 8496 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 09:53:27.445  INFO 8496 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Employees found
+2022-11-23 09:53:27.445 DEBUG 8496 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 09:53:27.446 DEBUG 8496 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 09:53:51.257 DEBUG 8496 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 09:53:51.257  INFO 8496 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 09:53:51.268  INFO 8496 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Employees found
+2022-11-23 09:53:51.268 DEBUG 8496 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 09:53:51.268 DEBUG 8496 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 09:53:56.665 DEBUG 8496 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 09:53:56.666  INFO 8496 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 09:53:56.670  INFO 8496 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Employees found
+2022-11-23 09:53:56.670 DEBUG 8496 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 09:53:56.670 DEBUG 8496 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 10:03:49.792 DEBUG 38238 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 10:03:49.794  INFO 38238 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 10:03:50.195  INFO 38238 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Employees found
+2022-11-23 10:03:50.197 DEBUG 38238 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 10:03:50.197 DEBUG 38238 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 10:04:26.906 ERROR 38238 --- [DiscoveryClient-HeartbeatExecutor-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CRUDAPI/192.168.0.163:CrudApi:4000 - was unable to send heartbeat!
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$3.execute(EurekaHttpClientDecorator.java:92) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.sendHeartBeat(EurekaHttpClientDecorator.java:89) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.renew(DiscoveryClient.java:893) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient$HeartbeatThread.run(DiscoveryClient.java:1457) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-11-23 10:04:27.273 ERROR 38238 --- [RMI TCP Connection(9)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_CRUDAPI/192.168.0.163:CrudApi:4000 - de-registration failedCannot execute request on any known server
+
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972) ~[eureka-client-1.10.17.jar:1.10.17]
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948) ~[eureka-client-1.10.17.jar:1.10.17]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:197) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:190) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136) ~[spring-cloud-context-3.1.5.jar:3.1.5]
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:213) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1163) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1156) ~[spring-beans-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:174) ~[spring-boot-2.7.5.jar:2.7.5]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021) ~[spring-context-5.3.23.jar:5.3.23]
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160) ~[spring-boot-2.7.5.jar:2.7.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72) ~[na:na]
+	at jdk.internal.reflect.GeneratedMethodAccessor78.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252) ~[na:na]
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814) ~[na:na]
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405) ~[na:na]
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829) ~[na:na]
+	at java.base/jdk.internal.reflect.GeneratedMethodAccessor80.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712) ~[na:na]
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705) ~[na:na]
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399) ~[na:na]
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2022-11-23 19:57:05.269 DEBUG 73595 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Entered::CrudController.showEmpById()
+2022-11-23 19:57:05.272  INFO 73595 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : =====calling service method::========
+2022-11-23 19:57:05.356  INFO 73595 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Employee Onject found
+2022-11-23 19:57:05.358 DEBUG 73595 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : employee record sent as response with status OK
+2022-11-23 19:57:05.358 DEBUG 73595 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Exit::CrudController.showEmpById()
+2022-11-23 19:57:33.274 DEBUG 73595 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : CrudController.modifyOrganisation()
+2022-11-23 19:57:33.275  INFO 73595 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Service method called
+2022-11-23 19:57:33.328 DEBUG 73595 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Response sent
+2022-11-23 20:02:05.948 DEBUG 73595 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 20:02:05.949  INFO 73595 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 20:02:06.148  INFO 73595 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Employees found
+2022-11-23 20:02:06.149 DEBUG 73595 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 20:02:06.149 DEBUG 73595 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 20:29:36.016 DEBUG 73595 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 20:29:36.019  INFO 73595 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 20:29:36.037  INFO 73595 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Employees found
+2022-11-23 20:29:36.037 DEBUG 73595 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 20:29:36.038 DEBUG 73595 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 20:42:50.694 DEBUG 80651 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 20:42:50.697  INFO 80651 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 20:42:51.155  INFO 80651 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Employees found
+2022-11-23 20:42:51.156 DEBUG 80651 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 20:42:51.156 DEBUG 80651 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 20:48:42.883 DEBUG 80651 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 20:48:42.884  INFO 80651 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 20:48:42.895  INFO 80651 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Employees found
+2022-11-23 20:48:42.896 DEBUG 80651 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 20:48:42.896 DEBUG 80651 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 20:51:39.104 DEBUG 80651 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 20:51:39.104  INFO 80651 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 20:51:39.111  INFO 80651 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Employees found
+2022-11-23 20:51:39.112 DEBUG 80651 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 20:51:39.112 DEBUG 80651 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 20:58:24.166 DEBUG 80651 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 20:58:24.167  INFO 80651 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 20:58:24.195  INFO 80651 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Employees found
+2022-11-23 20:58:24.195 DEBUG 80651 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 20:58:24.195 DEBUG 80651 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 21:19:17.178 DEBUG 80651 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 21:19:17.182  INFO 80651 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 21:19:17.210  INFO 80651 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Employees found
+2022-11-23 21:19:17.211 DEBUG 80651 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 21:19:17.211 DEBUG 80651 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Exit from method
+2022-11-23 22:41:31.611 DEBUG 3830 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-23 22:41:31.612  INFO 3830 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-23 22:41:31.878  INFO 3830 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Employees found
+2022-11-23 22:41:31.879 DEBUG 3830 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-23 22:41:31.879 DEBUG 3830 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Exit from method

@@ -45,8 +45,11 @@ public class BetaController {
 	@GetMapping("/showAllEmployee")
 	public String showAllEmployee(Map<String, Object> map) throws Exception {
 
+		//String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/showById/{id}";
+
 		String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/showAllEmployees";
-		
+		//http://192.168.0.163:4000/crudApi/showAllEmployees
+		//String serviceUrl="http://192.168.0.163:4000/crudApi/showAllEmployees";
 		
 		ResponseEntity<String> resp = template.exchange(serviceUrl, HttpMethod.GET, null, String.class);
 
