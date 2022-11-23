@@ -8,6 +8,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
+
 public class AlphaCrudApplication {
 	
 	private static Logger logger=LoggerFactory.getLogger(AlphaCrudApplication.class);
