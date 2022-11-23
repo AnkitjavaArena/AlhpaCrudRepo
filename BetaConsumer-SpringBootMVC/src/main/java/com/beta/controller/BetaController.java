@@ -1,5 +1,6 @@
 package com.beta.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -22,6 +23,7 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.beta.entity.EmployeeBean;
+import com.beta.fClient.BetaFeignClient;
 import com.beta.validations.EmployeeValidator;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -29,6 +31,9 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @Controller
 public class BetaController {
 
+	@Autowired
+	private BetaFeignClient client;
+	
 	@Autowired
 	private RestTemplate template;
 	@Autowired
@@ -45,18 +50,37 @@ public class BetaController {
 	@GetMapping("/showAllEmployee")
 	public String showAllEmployee(Map<String, Object> map) throws Exception {
 
-		//String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/showById/{id}";
+//		//String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/showById/{id}";
+//
+//		String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/showAllEmployees";
+//		//http://192.168.0.163:4000/crudApi/showAllEmployees
+//		//String serviceUrl="http://192.168.0.163:4000/crudApi/showAllEmployees";
+//		
+//		ResponseEntity<String> resp = template.exchange(serviceUrl, HttpMethod.GET, null, String.class);
+//
+//		String JsonRespBody = resp.getBody();
+//		// convert json response body to List<EmployeeBean object>(list of model object)
+//		ObjectMapper mapper = new ObjectMapper();
+//		List<EmployeeBean> employeeList = mapper.readValue(JsonRespBody, new TypeReference<List<EmployeeBean>>() {
+//		});
+//		// keep results in MAp collection as model attributes-->
+//		// model data set will travel with request
+//		map.put("empData", employeeList);
+//
+//		// returning Logical view name to view resolver
+//		return "employee_page";
 
-		String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/showAllEmployees";
-		//http://192.168.0.163:4000/crudApi/showAllEmployees
-		//String serviceUrl="http://192.168.0.163:4000/crudApi/showAllEmployees";
 		
-		ResponseEntity<String> resp = template.exchange(serviceUrl, HttpMethod.GET, null, String.class);
-
+		//changing code to feign client
+		System.out.println("BetaController:: client comp class name::"+client.getClass());
+		//use client comp
+		
+		ResponseEntity<String> resp=  (ResponseEntity<String>) client.fetchAllEmployees();
+		
 		String JsonRespBody = resp.getBody();
 		// convert json response body to List<EmployeeBean object>(list of model object)
-		ObjectMapper mapper = new ObjectMapper();
-		List<EmployeeBean> employeeList = mapper.readValue(JsonRespBody, new TypeReference<List<EmployeeBean>>() {
+	ObjectMapper mapper = new ObjectMapper();
+	List<EmployeeBean> employeeList = mapper.readValue(JsonRespBody, new TypeReference<List<EmployeeBean>>() {
 		});
 		// keep results in MAp collection as model attributes-->
 		// model data set will travel with request
@@ -64,6 +88,7 @@ public class BetaController {
 
 		// returning Logical view name to view resolver
 		return "employee_page";
+
 	}// end of method
 
 	// to launch eployee Registration form and add employee
@@ -101,7 +126,7 @@ public class BetaController {
 		// invoke Spring rest service
 
 	//	String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/save";
-		String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/save";
+	//	String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/save";
 
 		// prepare HttpEntity object(headers + body)
 		// preparing headers n theen add json data in entity
@@ -110,8 +135,8 @@ public class BetaController {
 
 		HttpEntity<String> entity = new HttpEntity<String>(jsonData, headers);
 
-		ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.POST, entity, String.class);
-
+		//ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.POST, entity, String.class);
+		ResponseEntity<String> response=client.insertEmpRecords(employee);
 		String result = response.getBody();
 		attrs.addFlashAttribute("result", result);
 
@@ -127,8 +152,9 @@ public class BetaController {
 		String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/showById/{id}";
 
 		
-		ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.GET, null, String.class, empId);
+		//ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.GET, null, String.class, empId);
 
+		ResponseEntity<String> response =client.fetchEmpById(empId);
 		// get json body from response
 		String jsonBody = response.getBody();
 		// convert jsonbody to EmplooyeBean object
@@ -153,20 +179,20 @@ public class BetaController {
 			if(errors.hasErrors())
 				return "edit_employee";
 		}//end of if case
-	
 		
 		// Convert object to jackson data using jackson api
 		String jsonData = mapper.writeValueAsString(employee);
 		// invoke rest service
 		//String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/updateRecord";
-		String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/updateRecord";
+		//String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/updateRecord";
 		
 		// set Httpentity object
 		HttpHeaders headers = new HttpHeaders();
 		headers.setContentType(MediaType.APPLICATION_JSON);
 		HttpEntity<String> entity = new HttpEntity<String>(jsonData, headers);
-		ResponseEntity<String> resp = template.exchange(serviceUrl, HttpMethod.PUT, entity, String.class);
+	//	ResponseEntity<String> resp = template.exchange(serviceUrl, HttpMethod.PUT, entity, String.class);
 
+		ResponseEntity<String> resp=client.updateRecord(employee);
 		String result = resp.getBody();
 		attrs.addFlashAttribute("result", result);
 
@@ -179,10 +205,11 @@ public class BetaController {
 
 		// invoke rest method
 			//	String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi//delete/{id}";
-				String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/delete/{id}";
+				//String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/delete/{id}";
 				
-				ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.DELETE, null, String.class, empId);
+			//	ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.DELETE, null, String.class, empId);
 
+		ResponseEntity<String> response =client.deleteEmployeeById(empId);
 				// get json body from response
 				String result = response.getBody();
 		
@@ -204,12 +231,12 @@ public String demo(@RequestParam("id") Integer empId,ModelMap modelMap) throws E
 	System.out.println("BetaController.demo()");
 	
 	//String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi/showById/{id}";
-	String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/showById/{id}";
+//	String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/showById/{id}";
 	
 	
 	
-	ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.GET, null, String.class, empId);
-
+	//ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.GET, null, String.class, empId);
+	ResponseEntity<String> response=client.fetchEmpById(empId);
 	// get json body from response
 	String jsonBody = response.getBody();
 	//System.out.println(jsonBody.toString());
@@ -229,14 +256,15 @@ public String DeletAll(ModelMap modelMap) throws Exception{
 	System.out.println("BetaController.DeletAll()");
 	
 	//String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi/deleteAll";
-	String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/deleteAll";
+	//String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/deleteAll";
 	
 	
 	
 //	http://192.168.0.163:4000/CrudApi/actuator/info
 	
-	ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.DELETE, null, String.class );
+//	ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.DELETE, null, String.class );
 
+	ResponseEntity<String> response=client.deleteAllEmployee();
 	// get json body from response
 	String jsonBody = response.getBody();
 	//System.out.println(jsonBody.toString());
@@ -259,12 +287,13 @@ public String modifyOrganisation(@RequestParam("id") Integer id ,
 	//Integer id=Integer.parseInt(empId);
 //	http://lmipl-157.bbrouter:4000/crudApi/modify/18/Wipro
 	//String serviceurl = "http://lmipl-157.bbrouter:4000/crudApi/modify/{id}/{organisation}";
-	String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/modify/{id}/{organisation";
+	//String serviceUrl = "http://lmipl-157.bbrouter:4000/crudApi/modify/{id}/{organisation";
 	
 	
-	template.setRequestFactory(new HttpComponentsClientHttpRequestFactory());
-	ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.PATCH, null, String.class,id,organisation );
+	//template.setRequestFactory(new HttpComponentsClientHttpRequestFactory());
+//	ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.PATCH, null, String.class,id,organisation );
 
+	ResponseEntity<String> response=client.modifyOrganisation(id, organisation);
 	System.out.println("===========ORGANISATION::"+organisation);
 	// get json body from response
 	String jsonBody = response.getBody();

@@ -116,7 +116,7 @@ public class CrudController {
 	}// end of method
 
 	@PutMapping("/updateRecord")
-	public ResponseEntity<String> updateActorRecord(@RequestBody EmployeeBean employee) {
+	public ResponseEntity<String> updateRecord(@RequestBody EmployeeBean employee) {
 		System.out.println("CrudController.updateActorRecord()");
 		logger.debug("CrudController.updateActorRecord()");
 		logger.info("servivce method called");

@@ -312,3 +312,181 @@ com.netflix.discovery.shared.transport.TransportException: Cannot execute reques
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635) ~[na:na]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
+2022-11-24 03:20:35.335 DEBUG 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 03:20:35.336  INFO 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 03:20:35.533  INFO 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Employees found
+2022-11-24 03:20:35.533 DEBUG 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 03:20:35.533 DEBUG 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 03:26:39.946 DEBUG 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 03:26:39.946  INFO 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 03:26:39.952  INFO 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Employees found
+2022-11-24 03:26:39.953 DEBUG 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 03:26:39.953 DEBUG 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 03:30:38.873 DEBUG 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 03:30:38.874  INFO 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 03:30:38.877  INFO 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Employees found
+2022-11-24 03:30:38.878 DEBUG 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 03:30:38.878 DEBUG 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 03:34:24.231 DEBUG 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 03:34:24.231  INFO 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 03:34:24.237  INFO 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : Employees found
+2022-11-24 03:34:24.237 DEBUG 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 03:34:24.237 DEBUG 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 03:40:47.154 DEBUG 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 03:40:47.155  INFO 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 03:40:47.159  INFO 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Employees found
+2022-11-24 03:40:47.159 DEBUG 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 03:40:47.159 DEBUG 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 03:40:55.298 DEBUG 21566 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 03:40:55.298  INFO 21566 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 03:40:55.309  INFO 21566 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : Employees found
+2022-11-24 03:40:55.309 DEBUG 21566 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 03:40:55.309 DEBUG 21566 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 03:41:21.465 DEBUG 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : entering::CrudController.insertEmpRecords()
+2022-11-24 03:41:21.467  INFO 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Calling service method
+2022-11-24 03:41:21.526 DEBUG 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : response sent
+2022-11-24 03:41:21.526  INFO 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : record entered
+2022-11-24 03:41:21.526 DEBUG 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 03:41:21.548 DEBUG 21566 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 03:41:21.549  INFO 21566 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 03:41:21.554  INFO 21566 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Employees found
+2022-11-24 03:41:21.555 DEBUG 21566 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 03:41:21.555 DEBUG 21566 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 03:45:02.560 DEBUG 21566 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : Entered::CrudController.showEmpById()
+2022-11-24 03:45:02.560  INFO 21566 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : =====calling service method::========
+2022-11-24 03:45:02.592  INFO 21566 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : Employee Onject found
+2022-11-24 03:45:02.594 DEBUG 21566 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : employee record sent as response with status OK
+2022-11-24 03:45:02.595 DEBUG 21566 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : Exit::CrudController.showEmpById()
+2022-11-24 03:45:09.251 DEBUG 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Entered::CrudController.showEmpById()
+2022-11-24 03:45:09.252  INFO 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : =====calling service method::========
+2022-11-24 03:45:09.259 ERROR 21566 --- [http-nio-4000-exec-5] com.rcx.advice.CrudControllerAdvice      : new ErrorDetail object created
+2022-11-24 03:53:17.487 DEBUG 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Entered::CrudController.showEmpById()
+2022-11-24 03:53:17.488  INFO 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : =====calling service method::========
+2022-11-24 03:53:17.501 ERROR 21566 --- [http-nio-4000-exec-1] com.rcx.advice.CrudControllerAdvice      : new ErrorDetail object created
+2022-11-24 03:53:26.258 DEBUG 21566 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 03:53:26.258  INFO 21566 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 03:53:26.272  INFO 21566 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Employees found
+2022-11-24 03:53:26.272 DEBUG 21566 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 03:53:26.272 DEBUG 21566 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 03:53:27.854 DEBUG 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Entered::CrudController.showEmpById()
+2022-11-24 03:53:27.854  INFO 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : =====calling service method::========
+2022-11-24 03:53:27.860  INFO 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Employee Onject found
+2022-11-24 03:53:27.861 DEBUG 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : employee record sent as response with status OK
+2022-11-24 03:53:27.861 DEBUG 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Exit::CrudController.showEmpById()
+2022-11-24 03:53:55.353 DEBUG 21566 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : CrudController.updateActorRecord()
+2022-11-24 03:53:55.354  INFO 21566 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : servivce method called
+2022-11-24 03:53:55.374  INFO 21566 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : Received response from service
+2022-11-24 03:53:55.374 DEBUG 21566 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : Response sent 
+2022-11-24 03:53:55.391 DEBUG 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 03:53:55.391  INFO 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 03:53:55.395  INFO 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Employees found
+2022-11-24 03:53:55.395 DEBUG 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 03:53:55.396 DEBUG 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 03:56:18.807 DEBUG 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 03:56:18.808  INFO 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 03:56:18.814  INFO 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : Employees found
+2022-11-24 03:56:18.814 DEBUG 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 03:56:18.814 DEBUG 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 03:56:23.006 DEBUG 21566 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : CrudController.deleteEmployeeById()
+2022-11-24 03:56:23.006  INFO 21566 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : received response from service
+2022-11-24 03:56:23.023  INFO 21566 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : response sent
+2022-11-24 03:56:23.038 DEBUG 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 03:56:23.039  INFO 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 03:56:23.042  INFO 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Employees found
+2022-11-24 03:56:23.043 DEBUG 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 03:56:23.043 DEBUG 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 03:59:41.276 DEBUG 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Entered::CrudController.showEmpById()
+2022-11-24 03:59:41.276  INFO 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : =====calling service method::========
+2022-11-24 03:59:41.279  INFO 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Employee Onject found
+2022-11-24 03:59:41.280 DEBUG 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : employee record sent as response with status OK
+2022-11-24 03:59:41.281 DEBUG 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Exit::CrudController.showEmpById()
+2022-11-24 04:02:08.029 DEBUG 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 04:02:08.029  INFO 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 04:02:08.033  INFO 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Employees found
+2022-11-24 04:02:08.033 DEBUG 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 04:02:08.033 DEBUG 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 04:02:14.085 DEBUG 21566 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : CrudController.deleteAllEmployee()
+2022-11-24 04:02:14.085  INFO 21566 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : service method called
+2022-11-24 04:02:14.096  INFO 21566 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : receive response from service
+2022-11-24 04:02:14.097 DEBUG 21566 --- [http-nio-4000-exec-4] com.rcx.controller.CrudController        : Response sent
+2022-11-24 04:02:18.989 DEBUG 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 04:02:18.989  INFO 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 04:02:18.992  INFO 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Employees found
+2022-11-24 04:02:18.992 DEBUG 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 04:02:18.993 DEBUG 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 04:02:36.393 DEBUG 21566 --- [http-nio-4000-exec-6] com.rcx.controller.CrudController        : entering::CrudController.insertEmpRecords()
+2022-11-24 04:02:36.393  INFO 21566 --- [http-nio-4000-exec-6] com.rcx.controller.CrudController        : Calling service method
+2022-11-24 04:02:36.398 DEBUG 21566 --- [http-nio-4000-exec-6] com.rcx.controller.CrudController        : response sent
+2022-11-24 04:02:36.399  INFO 21566 --- [http-nio-4000-exec-6] com.rcx.controller.CrudController        : record entered
+2022-11-24 04:02:36.404 DEBUG 21566 --- [http-nio-4000-exec-6] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 04:02:36.431 DEBUG 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 04:02:36.432  INFO 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 04:02:36.436  INFO 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : Employees found
+2022-11-24 04:02:36.436 DEBUG 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 04:02:36.436 DEBUG 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 04:02:46.313 DEBUG 21566 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : entering::CrudController.insertEmpRecords()
+2022-11-24 04:02:46.314  INFO 21566 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : Calling service method
+2022-11-24 04:02:46.322 DEBUG 21566 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : response sent
+2022-11-24 04:02:46.323  INFO 21566 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : record entered
+2022-11-24 04:02:46.324 DEBUG 21566 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 04:02:46.335 DEBUG 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 04:02:46.335  INFO 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 04:02:46.339  INFO 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Employees found
+2022-11-24 04:02:46.339 DEBUG 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 04:02:46.339 DEBUG 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 04:02:55.630 DEBUG 21566 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : CrudController.deleteEmployeeById()
+2022-11-24 04:02:55.631  INFO 21566 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : received response from service
+2022-11-24 04:02:55.643 ERROR 21566 --- [http-nio-4000-exec-10] com.rcx.service.AlphaCrudService         : Exception raised
+2022-11-24 04:02:55.645 ERROR 21566 --- [http-nio-4000-exec-10] com.rcx.advice.CrudControllerAdvice      : new ErrorDetail object created
+2022-11-24 04:03:00.910 DEBUG 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 04:03:00.911  INFO 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 04:03:00.917  INFO 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Employees found
+2022-11-24 04:03:00.918 DEBUG 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 04:03:00.918 DEBUG 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 04:03:20.594 DEBUG 21566 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : CrudController.deleteEmployeeById()
+2022-11-24 04:03:20.594  INFO 21566 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : received response from service
+2022-11-24 04:03:20.601  INFO 21566 --- [http-nio-4000-exec-2] com.rcx.controller.CrudController        : response sent
+2022-11-24 04:03:20.642 DEBUG 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 04:03:20.643  INFO 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 04:03:20.646  INFO 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Employees found
+2022-11-24 04:03:20.646 DEBUG 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 04:03:20.646 DEBUG 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 04:05:42.445 DEBUG 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 04:05:42.446  INFO 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 04:05:42.449  INFO 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Employees found
+2022-11-24 04:05:42.449 DEBUG 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 04:05:42.449 DEBUG 21566 --- [http-nio-4000-exec-5] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 04:05:54.059 DEBUG 21566 --- [http-nio-4000-exec-6] com.rcx.controller.CrudController        : entering::CrudController.insertEmpRecords()
+2022-11-24 04:05:54.060  INFO 21566 --- [http-nio-4000-exec-6] com.rcx.controller.CrudController        : Calling service method
+2022-11-24 04:05:54.068 DEBUG 21566 --- [http-nio-4000-exec-6] com.rcx.controller.CrudController        : response sent
+2022-11-24 04:05:54.068  INFO 21566 --- [http-nio-4000-exec-6] com.rcx.controller.CrudController        : record entered
+2022-11-24 04:05:54.069 DEBUG 21566 --- [http-nio-4000-exec-6] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 04:05:54.093 DEBUG 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 04:05:54.093  INFO 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 04:05:54.101  INFO 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : Employees found
+2022-11-24 04:05:54.101 DEBUG 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 04:05:54.101 DEBUG 21566 --- [http-nio-4000-exec-7] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 04:06:09.852 DEBUG 21566 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 04:06:09.852  INFO 21566 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 04:06:09.858  INFO 21566 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : Employees found
+2022-11-24 04:06:09.858 DEBUG 21566 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 04:06:09.858 DEBUG 21566 --- [http-nio-4000-exec-8] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 04:06:17.725 DEBUG 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Entered::CrudController.showEmpById()
+2022-11-24 04:06:17.725  INFO 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : =====calling service method::========
+2022-11-24 04:06:17.729  INFO 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Employee Onject found
+2022-11-24 04:06:17.730 DEBUG 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : employee record sent as response with status OK
+2022-11-24 04:06:17.730 DEBUG 21566 --- [http-nio-4000-exec-9] com.rcx.controller.CrudController        : Exit::CrudController.showEmpById()
+2022-11-24 04:06:31.278 DEBUG 21566 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : CrudController.updateActorRecord()
+2022-11-24 04:06:31.278  INFO 21566 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : servivce method called
+2022-11-24 04:06:31.294  INFO 21566 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : Received response from service
+2022-11-24 04:06:31.295 DEBUG 21566 --- [http-nio-4000-exec-10] com.rcx.controller.CrudController        : Response sent 
+2022-11-24 04:06:31.308 DEBUG 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 04:06:31.308  INFO 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 04:06:31.311  INFO 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Employees found
+2022-11-24 04:06:31.311 DEBUG 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 04:06:31.311 DEBUG 21566 --- [http-nio-4000-exec-1] com.rcx.controller.CrudController        : Exit from method
+2022-11-24 04:09:52.894 DEBUG 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Entering::CrudController.showAllEmployees()
+2022-11-24 04:09:52.894  INFO 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : calling service.showallEmployees() method
+2022-11-24 04:09:52.902  INFO 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Employees found
+2022-11-24 04:09:52.902 DEBUG 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : employees found, response=ok
+2022-11-24 04:09:52.902 DEBUG 21566 --- [http-nio-4000-exec-3] com.rcx.controller.CrudController        : Exit from method
