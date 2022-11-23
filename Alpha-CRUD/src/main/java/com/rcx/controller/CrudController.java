@@ -130,6 +130,7 @@ public class CrudController {
 	public ResponseEntity<String> modifyOrganisation(@PathVariable("id") Integer id,
 			@PathVariable("organisation") String organisation) {
 		System.out.println("CrudController.modifyOrganisation()");
+		System.out.println("ORGANIZATION::"+organisation);
 		logger.debug("CrudController.modifyOrganisation()");
 		logger.info("Service method called");
 		String msg = service.updateEmployeesOrganisation(id, organisation);

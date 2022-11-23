@@ -265,6 +265,7 @@ public String modifyOrganisation(@RequestParam("id") Integer id ,
 	template.setRequestFactory(new HttpComponentsClientHttpRequestFactory());
 	ResponseEntity<String> response = template.exchange(serviceUrl, HttpMethod.PATCH, null, String.class,id,organisation );
 
+	System.out.println("===========ORGANISATION::"+organisation);
 	// get json body from response
 	String jsonBody = response.getBody();
 	//System.out.println(jsonBody.toString());
