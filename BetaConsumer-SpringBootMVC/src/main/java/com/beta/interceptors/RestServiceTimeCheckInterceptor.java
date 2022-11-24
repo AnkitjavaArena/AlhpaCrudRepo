@@ -44,7 +44,7 @@ public boolean preHandle(HttpServletRequest req, HttpServletResponse resp, Objec
 	//get current hour of the day
 	int hour=localDateTime.getHour();
 	//int  serviceDowntime=8;
-	if(hour>7&&hour<10) {
+	if(hour>22&&hour<24) {
 		System.out.println("Not allowed after 9AM");
 		String  responseFromInterceptor="Service not allowed after&nbsp;"+hour+"&nbsp;Hour"+"<br>Try after some time";
 		RequestDispatcher rd=req.getRequestDispatcher("/service_unavailable.jsp");
